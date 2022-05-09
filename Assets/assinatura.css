@@ -38,13 +38,36 @@ p {
 .partialone {
   background-color: #d61b1b;
   width: 100%;
+  height: max-content;
   text-align: center;
+  height: fit-content;
   color: white;
 }
 .partialtwo {
   width: 100%;
   text-align: center;
 }
+.partialtwoform .col-md-4 {
+  display: flex;
+  width: 22vw;
+  justify-content: start;
+  margin: auto;
+}
+.partialtwoform h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.logo {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.partialtwoform {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 .pequeno {
   font-size: small;
 }
@@ -110,7 +133,13 @@ ul .vip-item {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
+.melhor {
+  background-color: #de1925;
+  color: #fff;
+}
+.melhor p {
+  color: #fff !important;
+}
 .active,
 .dot:hover {
   background-color: #717171;
@@ -119,6 +148,77 @@ ul .vip-item {
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+}
+.partialtwoform .btn:hover {
+  background-color: red;
+  color: white;
+}
+form .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  margin: 20px;
+  width: 400px;
+  transition: all 0.3s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.menor {
+  font-size: 0.8rem;
+}
+.beneficiosPlanos {
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  list-style-type: none;
+  flex-direction: column;
+}
+.card p {
+  color: #a3a5ae;
+  font-size: 16px;
+}
+
+.image {
+  max-width: 64rem;
+  max-height: 64rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.card p {
+  color: #a3a5ae;
+  font-size: 16px;
+}
+
+.image {
+  float: right;
+  max-width: 64px;
+  max-height: 64px;
+}
+.aceiteterm a {
+  text-decoration: none;
+  color: #db0909;
+  font-weight: 600;
+}
+
+.imagemassinatura2 {
+  max-width: 200px;
+  margin: auto;
 }
 
 @keyframes fade {
@@ -129,34 +229,81 @@ ul .vip-item {
     opacity: 1;
   }
 }
-@media (min-width: 1025px) and (max-width: 5000px) {
+@media (min-width: 1000px) and (max-width: 5000px) {
   .master {
     flex-direction: line !important;
+    width: 100%;
   }
-  .partialone{
-    height: 100vh;
+  .card {
+    width: 53vh;
   }
-  .fundoslide{
-margin-top: 10vh;
+
+  .partialone {
+    width: 150vh;
+    height: fit-content;
+  }
+  .partialtwoform {
+    height: fit-content;
+  }
+
+  .imagemassinatura2 {
+    max-width: 300px;
+    margin: auto;
+  }
+  .fundoslide {
+    margin-top: 10vh;
   }
   .nodesk {
     display: none;
+  }
+  .partialtwoform .col-md-4 {
+    display: flex;
+    width: 50vh;
   }
 }
 @media screen and (max-width: 820px) {
   .cta-assine {
     font-size: 2.8vmax;
+    margin-bottom: 2vh;
+  }
+  .partialtwoform .col-md-4 {
+    display: flex;
+    width: 50vh;
+    justify-content: start;
   }
   .master {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 768px) {
+  .cta-assine {
+    font-size: 2.8vmax;
+    margin-bottom: 2vh;
+  }
+  .partialtwoform .col-md-4 {
+    display: flex;
+    width: 60vh;
+    justify-content: start;
+  }
+  .master {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 414px) {
   .cta-assine {
     font-size: 2.4vmax;
   }
   .master {
     flex-direction: column;
+  }
+  .partialtwoform .col-md-4 {
+    display: flex;
+    width: 40vh;
+    justify-content: start;
+  }
+  .card {
+    width: fit-content;
   }
 }
 
@@ -166,5 +313,10 @@ margin-top: 10vh;
   }
   .master {
     flex-direction: column;
+  }
+  .partialtwoform .col-md-4 {
+    display: flex;
+    width: 30vh;
+    justify-content: start;
   }
 }

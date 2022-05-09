@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -12,37 +12,180 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <style>
-        .circulo{
-            width: 30vh;
-	height: 30vh;
-	border-radius: 50%;
-	overflow: hidden;
-	margin: 15px;
-	transition: 0.3s ease;
-    background: linear-gradient(324.93deg, #D61B1B 0.74%, #F2183F 100%);
-        }
-        .tituloslider{
-            color: white;
-            font-weight: 600;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="Assets/assinatura.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="Assets/scriptsassinatura.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fbb02379ea.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <section class="container-fluid master">
-            <div class="row">
-              <div class="col-md-5" style="background-color: red;">
-                <span class="tituloslider" style="text-align: center;">
-                    Conecte-se ao maior jornal de Rondônia
-                </span>
-                <div class="circulo"> </div>
-              </div>
-              <div class="col-md-7" style="background-color: saddlebrown;">
-                One of three columns
-              </div>
-            </div>
-    </section>
+    <div class="master">
+      <div class="partialtwoform">
+       <!-- Text input-->
+      <fieldset>
+    <form>
+      <img class="logo" src="/Assets/logo17.png"></img>
+       <h2> Insira seus dados</h2>
+<div class="one">
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Nome</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text"  class="form-control input-md" required="">
+  </div>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Emailinput">Email</label>  
+  <div class="col-md-4">
+  <input id="Emailinput" name="Emailinput" type="text"  class="form-control input-md" required="">
+  </div>
+</div>
 
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="CepInput">Cep</label>  
+  <div class="col-md-4">
+  <input id="CepInput" name="CepInput" type="text"  class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="date">Data de Nascimento<span style="font-size: 0.8rem;">(dd/mm/yy)</span></label>  
+  <div class="col-md-4">
+  <input id="date" name="date" type="text" class="form-control input-md" required="">
+    
+  </div>
+</div>
+</div>
+
+</div>
+<div class="two">
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="CellInput">Celular/Whatsapp</label>  
+  <div class="col-md-4">
+  <input id="CellInput" name="CellInput" type="text" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="passinput">Senha</label>
+  <div class="col-md-4">
+    <input id="passinput" name="passdinput" type="password" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="confirmpassinput">Confirme sua senha</label>
+  <div class="col-md-4">
+    <input id="confirmpassinput" name="confirmpassinput" type="password" class="form-control input-md" required="">
+    
+  </div>
+</div>
+</div>
+
+<!-- Plano -->
+<div class="form-group">
+</br>
+<h2> Escolha seu plano</h2>
+<div class="row">
+  <div class="card">
+    <img class="image" src="/Assets/badge.png" />
+    <h6>Plano Semenstral(6 meses)</h6>
+    <h2><b>R$ 4,17<small class="text-muted menor">/mês</small></b></h2>
+    <p>Total de R$ 25,00</p>
+    <ul class="beneficiosPlanos">
+    <li><i class="fa fa-check" aria-hidden="true"></i> Acesso Ilimitado a notícias</li>
+    <li><i class="fa fa-check" aria-hidden="true"></i> Acesso a benefícios</li>
+    <li><i class="fa fa-check" aria-hidden="true"></i> Acesso a promoções</li>
+  </ul>
+  <button class="btn btn-primary melhor">Quero este</button>
+  </div>
+
+  <div class="card melhor">
+    <img class="image" src="/Assets/badge.png" />
+    <p class="melhor"><b>Melhor custo-benefício</b></p>
+    <h6>Plano Anual(12 meses)</h6>
+    <h2><b>R$ 3,15<small class="menor">/mês</small></b></h2>
+    <p class="melhor">Total de R$ 45,00</p>
+    <ul class="beneficiosPlanos">
+    <li><i class="fa fa-check" aria-hidden="true"></i> Acesso Ilimitado a notícias</li>
+    <li><i class="fa fa-check" aria-hidden="true"></i> Acesso a benefícios</li>
+    <li><i class="fa fa-check" aria-hidden="true"></i> Acesso a promoções</li>
+  </ul>
+  <button class="btn btn-light ">Quero este</button>
+  </div>
+
+  <div class="card">
+    <img class="image" src="/Assets/badge.png"/>
+    <h6>Plano Mensal(1 mês)</h6>
+    <h2><b>R$ 4,90<small class="text-muted menor">/mês</small></b></h2>
+    <p>&nbsp</p>
+    <ul class="beneficiosPlanos">
+    <li><i class="fa fa-check" aria-hidden="true"></i> Acesso Ilimitado a notícias</li>
+    <li><i class="fa fa-check" aria-hidden="true"></i> Acesso a benefícios</li>
+    <li><i class="fa fa-check" aria-hidden="true"></i> Acesso a promoções</li>
+  </ul>
+  <button class="btn btn-primary melhor">Quero este</button>
+  </div>
+  <!-- Formas de pagamento -->
+
+  <h2> Formas de Pagamento</h2>
+  <div class="row row-forma-pagamento">
+    <div class="col-sm-12">
+    <button class="btn btn-default btn-pagamento active" type="button" id="pagarcom-pix" onclick="mudaFormaPagamento(this);">
+    <i class="fa fa-qrcode"></i>
+    <span>PIX</span>
+    </button>
+    <button class="btn btn-default btn-pagamento" type="button" id="pagarcom-cartao" onclick="mudaFormaPagamento(this);">
+    <i class="fa fa-credit-card"></i>
+    <span>Cartão de crédito</span>
+    </button>
+    <button class="btn btn-default btn-pagamento" type="button" id="pagarcom-boleto" onclick="mudaFormaPagamento(this);" aria-invalid="false">
+    <i class="fa fa-barcode"></i>
+    Boleto
+    </button>
+    </div>
+    </div>
+    <div>
+      Manter o que já existe atualmente
+    </div>
+    <small class="menor" style="font-size: 1.5vh; margin: 0.5rem;">Todos os planos são renovados automaticamente pelo preço de tabela vigente. 
+    </small>
+    <div class="aceiteterm" style="font-size: 2vh; margin-left: 10px; margin-right: 10px;">
+      <label style="font-size: 2vh; margin-left: 10px; margin-right: 10px;"> <input type = "checkbox" id = "termosdeaceite" name = "termos" value = "aceite"> Eu concordo com os <a href="#">Termos</a> e <a href="#">Política de privacidade</a> </label>
+    </div>
+    
+    <div class="form-group" style="display: flex;">
+    
+      <label class="col-md-4 control-label" for="submit"></label>
+      <div class="col-md-4">
+        <button id="submit" name="submit" class="btn btn-danger">Assinar Agora</button>
+      </div>
+    </div>
+</div>
+
+</div>
+
+</fieldset>
+</form>
+</div>
+
+
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
